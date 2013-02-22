@@ -1,0 +1,186 @@
+/*
+ * Accordion Multi Menu
+ * 
+ * Designed by Nevide (http://codecanyon.net/user/Nevide)
+ * Written and customized by Alireza Eskandarpour Shoferi (http://about.me/cyletech)
+ * 
+ * (c) copyright 2013 under GNU GPLv3 license
+ */
+
+<<<<<<< HEAD
+$baseColor: #39C6E9
+$PersianFontFamily: 'Yekan', Arial, Tahoma
+$EnglishFontFamily: 'Source Sans Pro', sans-serif
+=======
+$itemHoverColor: #39C6E9
+$itemFontFamilyPE: 'Yekan', Arial, Tahoma
+$itemFontFamilyEN: 'Source Sans Pro', sans-serif
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+$bodyDirection: ltr
+
+@font-face
+	font-family: 'Yekan'
+	src: url('../font/BYekan.eot')
+	src: url('../font/BYekan.eot?#iefix') format('embedded-opentype'), url('../font/BYekan.woff') format('woff'), url('../font/BYekan.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+ul
+	list-style: none
+	padding: 0
+	margin: 0
+
+a
+	color: #646464
+	@if $bodyDirection == rtl
+<<<<<<< HEAD
+		font-family: $PersianFontFamily
+	@else
+		font-family: $EnglishFontFamily
+=======
+		font-family: $itemFontFamilyPE
+	@else
+		font-family: $itemFontFamilyEN
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+	text-decoration: none
+	&:focus
+		outline: none /* To remove firefox dotted border on focus */
+
+body
+	background-image: url(../img/bg1.jpg)
+	background-size: cover
+	direction: $bodyDirection
+
+\#accordion
+	width: 280px
+	font-size: 0.875em
+	box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.3)
+	-moz-box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.3)
+	-webkit-box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.3)
+	position: fixed
+	top: 50%
+	@if $bodyDirection == rtl
+		right: 50%
+	@else
+		left: 50%
+	margin-top: -140px
+	background-color: #fff
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	@if $bodyDirection == rtl
+		margin-right: (-280px/2)
+	@else
+		margin-left: (-280px/2)
+
+\#items
+	padding: 18px 0
+
+\#items
+	>li
+		>a
+			text-indent: 18px
+			width: 90%
+			margin: 0 auto
+			cursor: pointer
+			line-height: 39px
+			display: block
+			&::after
+				font-weight: bold
+				margin-top: 2px
+				content: "\f106"
+				font-family: 'FontAwesome'
+				position: absolute
+				@if $bodyDirection == rtl
+					left: 30px
+					content: "\f104"
+				@else
+					right: 30px
+					content: "\f105"
+
+\#items
+	>li
+		>a
+			&:hover,&.activated
+				color: #fff
+				font-weight: 600
+<<<<<<< HEAD
+				background-color: $baseColor
+=======
+				background-color: $itemHoverColor
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+				transition: background-color .4s ease-in-out
+				-moz-transition: background-color .4s ease-in-out
+				-webkit-transition: background-color .4s ease-in-out
+				-o-transition: background-color .4s ease-in-out
+			&.activated::after
+				content: "\f106"
+
+<<<<<<< HEAD
+.sub-items
+=======
+\.sub-items
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+	display: none
+	>li
+		&:first-child
+			>a
+				margin-top: 17px
+				height: 34px
+		&:last-child
+			>a
+				margin-bottom: 17px
+				height: 34px
+		>a
+			margin: 0 auto
+			width: 212px
+			line-height: 39px
+			text-indent: 24px
+			position: relative
+			display: block
+			@if $bodyDirection == rtl
+<<<<<<< HEAD
+				border-right: 2px solid rgba($baseColor,.3)
+			@else
+				border-left: 2px solid rgba($baseColor,.3)
+			&.current
+				color: $baseColor
+=======
+				border-right: 2px solid rgba($itemHoverColor,.3)
+			@else
+				border-left: 2px solid rgba($itemHoverColor,.3)
+			&.current
+				color: $itemHoverColor
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+				position: relative
+				font-weight: 600
+				&::before
+					content: "\f00c"
+					font-family: 'FontAwesome'
+					background-color: #fff
+					position: absolute
+<<<<<<< HEAD
+					color: $baseColor
+=======
+					color: $itemHoverColor
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+					font-size: 0.656em
+					@if $bodyDirection == rtl
+						right: -29px
+					@else
+						left: -29px
+		&:hover
+			>a
+<<<<<<< HEAD
+				color: $baseColor
+				transition: color .4s ease-in-out
+				-moz-transition: color .4s ease-in-out
+				-webkit-transition: color .4s ease-in-out
+				-o-transition: color .4s ease-in-out
+=======
+				color: $itemHoverColor
+				transition: color .4s ease-in-out
+				-moz-transition: color .4s ease-in-out
+				-webkit-transition: color .4s ease-in-out
+				-o-transition: color .4s ease-in-out
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124

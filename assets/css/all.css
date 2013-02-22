@@ -1,0 +1,207 @@
+/* Accordion Multi Menu
+ * 
+ * Designed by Nevide (http://codecanyon.net/user/Nevide)
+ * Written and customized by Alireza Eskandarpour Shoferi (http://about.me/cyletech)
+ * 
+ * (c) copyright 2013 under GNU GPLv3 license
+ */
+@font-face {
+  font-family: "Yekan";
+  src: url("../font/BYekan.eot");
+  src: url("../font/BYekan.eot?#iefix") format("embedded-opentype"), url("../font/BYekan.woff") format("woff"), url("../font/BYekan.ttf") format("truetype");
+  font-weight: normal;
+<<<<<<< HEAD
+  font-style: normal; }
+=======
+  font-style: normal;
+}
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+
+ul {
+  list-style: none;
+  padding: 0;
+<<<<<<< HEAD
+  margin: 0; }
+=======
+  margin: 0;
+}
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+
+a {
+  color: #646464;
+  font-family: "Source Sans Pro", sans-serif;
+<<<<<<< HEAD
+  text-decoration: none; }
+  a:focus {
+    outline: none; }
+=======
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+
+body {
+  background-image: url(../img/bg1.jpg);
+  background-size: cover;
+<<<<<<< HEAD
+  direction: ltr; }
+=======
+  direction: ltr;
+}
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+
+#accordion {
+  width: 280px;
+  font-size: 0.875em;
+  box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.3);
+  -webkit-box-shadow: 0px 4px 10px rgba(50, 50, 50, 0.3);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  background-color: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+<<<<<<< HEAD
+  margin-left: -140px; }
+
+#items {
+  padding: 18px 0; }
+=======
+  margin-left: -140px;
+}
+
+#items {
+  padding: 18px 0;
+}
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+
+#items > li > a {
+  text-indent: 18px;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+  line-height: 39px;
+<<<<<<< HEAD
+  display: block; }
+  #items > li > a::after {
+    font-weight: bold;
+    margin-top: 2px;
+    content: "\f106";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 30px;
+    content: "\f105"; }
+=======
+  display: block;
+}
+#items > li > a::after {
+  font-weight: bold;
+  margin-top: 2px;
+  content: "\f106";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 30px;
+  content: "\f105";
+}
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
+
+#items > li > a:hover, #items > li > a.activated {
+  color: white;
+  font-weight: 600;
+  background-color: #39c6e9;
+  transition: background-color 0.4s ease-in-out;
+  -moz-transition: background-color 0.4s ease-in-out;
+  -webkit-transition: background-color 0.4s ease-in-out;
+<<<<<<< HEAD
+  -o-transition: background-color 0.4s ease-in-out; }
+#items > li > a.activated::after {
+  content: "\f106"; }
+
+.sub-items {
+  display: none; }
+  .sub-items > li:first-child > a {
+    margin-top: 17px;
+    height: 34px; }
+  .sub-items > li:last-child > a {
+    margin-bottom: 17px;
+    height: 34px; }
+  .sub-items > li > a {
+    margin: 0 auto;
+    width: 212px;
+    line-height: 39px;
+    text-indent: 24px;
+    position: relative;
+    display: block;
+    border-left: 2px solid rgba(57, 198, 233, 0.3); }
+    .sub-items > li > a.current {
+      color: #39c6e9;
+      position: relative;
+      font-weight: 600; }
+      .sub-items > li > a.current::before {
+        content: "\f00c";
+        font-family: "FontAwesome";
+        background-color: white;
+        position: absolute;
+        color: #39c6e9;
+        font-size: 0.656em;
+        left: -29px; }
+  .sub-items > li:hover > a {
+    color: #39c6e9;
+    transition: color 0.4s ease-in-out;
+    -moz-transition: color 0.4s ease-in-out;
+    -webkit-transition: color 0.4s ease-in-out;
+    -o-transition: color 0.4s ease-in-out; }
+=======
+  -o-transition: background-color 0.4s ease-in-out;
+}
+#items > li > a.activated::after {
+  content: "\f106";
+}
+
+.sub-items {
+  display: none;
+}
+.sub-items > li:first-child > a {
+  margin-top: 17px;
+  height: 34px;
+}
+.sub-items > li:last-child > a {
+  margin-bottom: 17px;
+  height: 34px;
+}
+.sub-items > li > a {
+  margin: 0 auto;
+  width: 212px;
+  line-height: 39px;
+  text-indent: 24px;
+  position: relative;
+  display: block;
+  border-left: 2px solid rgba(57, 198, 233, 0.3);
+}
+.sub-items > li > a.current {
+  color: #39c6e9;
+  position: relative;
+  font-weight: 600;
+}
+.sub-items > li > a.current::before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  background-color: white;
+  position: absolute;
+  color: #39c6e9;
+  font-size: 0.656em;
+  left: -29px;
+}
+.sub-items > li:hover > a {
+  color: #39c6e9;
+  transition: color 0.4s ease-in-out;
+  -moz-transition: color 0.4s ease-in-out;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+}
+>>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
