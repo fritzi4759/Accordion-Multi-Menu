@@ -7,15 +7,9 @@
  * (c) copyright 2013 under GNU GPLv3 license
  */
 
-<<<<<<< HEAD
 $baseColor: #39C6E9
 $PersianFontFamily: 'Yekan', Arial, Tahoma
 $EnglishFontFamily: 'Source Sans Pro', sans-serif
-=======
-$itemHoverColor: #39C6E9
-$itemFontFamilyPE: 'Yekan', Arial, Tahoma
-$itemFontFamilyEN: 'Source Sans Pro', sans-serif
->>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
 $bodyDirection: ltr
 
 @font-face
@@ -33,15 +27,9 @@ ul
 a
 	color: #646464
 	@if $bodyDirection == rtl
-<<<<<<< HEAD
 		font-family: $PersianFontFamily
 	@else
 		font-family: $EnglishFontFamily
-=======
-		font-family: $itemFontFamilyPE
-	@else
-		font-family: $itemFontFamilyEN
->>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
 	text-decoration: none
 	&:focus
 		outline: none /* To remove firefox dotted border on focus */
@@ -104,11 +92,7 @@ body
 			&:hover,&.activated
 				color: #fff
 				font-weight: 600
-<<<<<<< HEAD
 				background-color: $baseColor
-=======
-				background-color: $itemHoverColor
->>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
 				transition: background-color .4s ease-in-out
 				-moz-transition: background-color .4s ease-in-out
 				-webkit-transition: background-color .4s ease-in-out
@@ -116,11 +100,7 @@ body
 			&.activated::after
 				content: "\f106"
 
-<<<<<<< HEAD
 .sub-items
-=======
-\.sub-items
->>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
 	display: none
 	>li
 		&:first-child
@@ -139,19 +119,11 @@ body
 			position: relative
 			display: block
 			@if $bodyDirection == rtl
-<<<<<<< HEAD
 				border-right: 2px solid rgba($baseColor,.3)
 			@else
 				border-left: 2px solid rgba($baseColor,.3)
 			&.current
 				color: $baseColor
-=======
-				border-right: 2px solid rgba($itemHoverColor,.3)
-			@else
-				border-left: 2px solid rgba($itemHoverColor,.3)
-			&.current
-				color: $itemHoverColor
->>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
 				position: relative
 				font-weight: 600
 				&::before
@@ -159,11 +131,7 @@ body
 					font-family: 'FontAwesome'
 					background-color: #fff
 					position: absolute
-<<<<<<< HEAD
 					color: $baseColor
-=======
-					color: $itemHoverColor
->>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
 					font-size: 0.656em
 					@if $bodyDirection == rtl
 						right: -29px
@@ -171,16 +139,8 @@ body
 						left: -29px
 		&:hover
 			>a
-<<<<<<< HEAD
 				color: $baseColor
 				transition: color .4s ease-in-out
 				-moz-transition: color .4s ease-in-out
 				-webkit-transition: color .4s ease-in-out
 				-o-transition: color .4s ease-in-out
-=======
-				color: $itemHoverColor
-				transition: color .4s ease-in-out
-				-moz-transition: color .4s ease-in-out
-				-webkit-transition: color .4s ease-in-out
-				-o-transition: color .4s ease-in-out
->>>>>>> 490ee0e24d4df81b9a5a0f602a03b5dc9766f124
