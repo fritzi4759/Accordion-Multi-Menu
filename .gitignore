@@ -1,0 +1,4 @@
+assets/font/*
+assets/img/*
+.sass-cache
+.~$
